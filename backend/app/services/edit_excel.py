@@ -1,4 +1,4 @@
-from notion_script import format_absence_data
+from backend.app.services.notion_script import format_absence_data
 import holidays
 from datetime import date, timedelta
 
@@ -110,4 +110,5 @@ def main():
     edit = EditExcel(target_month, "1000-1900", name, nric, role)
     edit.edit_excel()
     
-main()
+if __name__ == "__main__": 
+    main()

@@ -1,4 +1,4 @@
-import notion_API
+import backend.app.services.notion_API as notion_API
 from datetime import date, timedelta
 
 import json
